@@ -1,0 +1,33 @@
+export const APP_ROUTES = {
+  BASE: '',
+  LOGIN: 'login',
+  APP: 'app',
+  MANAGEMENT: 'management',
+  ADMIN: 'admin',
+  DEPARTMENTS: 'departments',
+  DEPARTMENT_CREATE: 'department-create',
+  EMPLOYEES: 'employees',
+  EMPLOYEE_CREATE: 'employee-create',
+  USERS: 'users',
+  USERS_CREATE: 'users-create',
+  USERS_UPDATE: 'users-update/:user_id',
+  ROLES: 'roles',
+  ROLES_CREATE: 'roles-create',
+  ROLES_UPDATE: 'roles-update/:role_id',
+}
+
+export const NAVIGATE_ROUTES = {
+  BASE: '/',
+  APP: '/app',
+  LOGIN: '/login',
+  DEPARTMENTS: '/app/management/departments',
+  DEPARTMENTS_CREATE: '/app/management/departments-create',
+  EMPLOYEES: '/app/management/employees',
+  EMPLOYEE_CREATE: '/app/management/employees-create',
+  USERS: '/app/admin/users',
+  USERS_CREATE: '/app/admin/users-create',
+  USERS_UPDATE: (user_id: string) => `/app/admin/users-update/${user_id}`,
+  ROLES: '/app/admin/roles',
+  ROLES_CREATE: '/app/admin/roles-create',
+  ROLES_UPDATE: (role_id: string) => `/app/admin/roles-update/${role_id}`,
+}
